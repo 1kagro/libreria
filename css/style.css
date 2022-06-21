@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Dosis', sans-serif;
+}
+
+:root {
+    --primary-color: #F0932B;
+    --secondary-color: #FFF6C8;
+    --btn-color-2: #FFBE76;
+    --text-color-1: #434343;
+}
+
+header {
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.header-menu h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #F0932B;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header-menu aside {
+    display: none;
+}
+
+.header-search {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.header-search input {
+    width: 100%;
+    padding: 2px 9%;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    color: #F0932B;
+    border-color: #FFF6C8;
+    background-color: var(--secondary-color);
+}
+
+.header-search input:focus {
+    outline: none;
+    /* background-color: var(--primary-color); */
+}
+
+.header-search img {
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    width: 10px;
+    height: 10px;
+}
+
+.header-search button {
+    position: absolute;
+    right: 0;
+    width: 5%;
+    height: 100%;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+main {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+/* section.main-sagas {
+    displaY: grid;
+    grid-template-areas: "header";
+} */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+.main-header a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.card-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, min-max(1fr 1fr)); */
+    grid-auto-flow: column;
+    /* grid-auto-columns: minmax(1fr, 1fr); */
+    grid-gap: 10px;
+    height: 195px;
+    overflow-x: auto;
+}
+
+.sagas-item {
+    background-color: aquamarine;
+    width: 290px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.section-item {
+    margin-bottom: 40px;
+}
+
+.tendecias-container {
+    height: 261px;
+}
+
+.tendecias-item {
+    background-color: #F0932B;
+    min-width: 150px;
+    max-width: 200px;
+    justify-self: center;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.categorias-container {
+    width: 100%;
+    padding: 0 25%;
+    margin: 0 auto;
+}
+
+.categorias-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: start;
+    font-size: 2rem;
+    gap: 5px;
+}
+
+.categorias-container ul li {
+    list-style: none;
+}
+
+/* Section Book */
+.header-book__container {
+    /* padding-top: 20px; */
+    background: radial-gradient(100% 100% at 50% 0%, #F0932B 0%, rgba(0, 0, 0, 3%) 100%);
+    position: absolute;
+    width: 100%;
+}
+header .header-book {
+    display: flex;
+    padding-top: 0;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.header-book > h1 {
+    font-size: 2.4rem;
+    font-style: normal;
+    color: white;
+    letter-spacing: 0.23em;
+    text-align: center;
+    width: 100%;
+}
+
+.header-book a {
+    left: 0;
+    width: 10%;
+    height: 100%;
+    font-size: 3rem;
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.cover-book {
+    background-image: url("./../assets/img/how_to_burn_the_bad_boy.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 66vh;
+}
+
+.info-book {
+    background-color: white;
+    width: 100vw;
+    height: 500px;
+    position: absolute;
+    top: 60vh;
+    padding: 40px 20px;
+    border-radius: 40px;
+}
+
+.info-book h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.info-book > .categorias {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 28px;
+    font-size: 1.5rem;
+}
+
+.categorias > .categorias__item {
+    background-color: var(--btn-color-2);
+    border-radius: 18px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+.info-book > .resumen {
+    margin-bottom: 10px;
+}
+.info-book > .resumen > p {
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    white-space: break-spaces;
+} 
+.info-book > .review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.review > .review_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.review_item > p {
+    
+}
