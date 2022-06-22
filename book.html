@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book</title>
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="theme-color" >
 </head>
 <body>
-    <header class="header-book__container">
+    <header id="book-container" class="header-book__container">
         <div class="header-book">
             <a href="./index.html"><</a>
             <h1>PÁSALO</h1>
@@ -29,13 +30,41 @@
         <div class="review">
             <div class="review_item">
                 <img src="./assets/img/icon_star.png" alt="icon of star">
-                <div class="review_rate"><p id="rate">4.5</p> <span>/5 - 120k</span></div>
+                <div class="review_rate"><p id="rate">4.5 <span>/5 - 120k</span> </p></div>
             </div>
             <div class="review_item">
                 <img src="./assets/img/icon_star_line.png" alt="icon of line star">
                 <div class="review_rate"><p id="calificacion">Calificacion</p></div>
             </div>
         </div>
+        <div class="info-created">
+            <p id="Author">Author: <span>Kat Reyes</span></p>
+            <p id="Editorial">Editorial: <span>Kat Reyes</span></p>
+        </div>
+        <div class="opinion">
+            <div class="user-opinion">
+                <p id="number">1.5k</p>
+                <p id="title">Opiniones de los usuarios</p>
+            </div>
+            <div class="review-opinion">
+                <p id="number">1.5k</p>
+                <p id="title">Reseñas criticas</p>
+            </div>
+        </div>
+        <div class="main-header">
+            <h2>Similares</h2>
+        </div>
+        <div id="similares" class="card-container similares-container">
+            <div class="card-item"></div>
+            <div class="card-item"></div>
+            <div class="card-item"></div>
+        </div>
+        <footer id="boot-detail" class="book-detail">
+            <div class="footer-book">
+                <p>De Barranquilla con ♥ para el mundo</p>
+                <img src="./assets/img/Pasalo-icon.png" alt="icon of PÁSALO">
+            </div>
+        </footer>
     </div>
 </body>
 </html>
