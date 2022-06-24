@@ -24,4 +24,16 @@ async function getTrendingMoviesPreview() {
     console.log(movies);
 }
 
-getTrendingMoviesPreview();
+function showToggleMenu() {
+    const menuIcon = document.querySelector('.button-wrap div');
+    const toggle = menuIcon.classList.toggle('icon-cancel');
+
+    const searchMenu = document.querySelector('.header-top-menu .header-search');
+    menuIcon.classList.toggle('icon-menu');
+    
+    if (toggle) {
+        searchMenu.style.display = 'flex';
+    } else {
+        searchMenu.style.display = 'none';
+    }   
+}

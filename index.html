@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-menu">
-            <h1>PásaloBooks</h1>
-            <img src="" alt="menu">
-            <aside>
+    <header class="header-top-menu">
+        <div class="header-menu no-margin-bottom">
+            <h1 class="no-margin-bottom">PásaloBooks</h1>
+            <!-- <img src="" alt="menu"> -->
+            <!-- <aside>
                 <ul>
                     <li></li>
                 </ul>
-            </aside>
+            </aside> -->
+            <button id="home-toggle-menu" class="button menu" onclick="showToggleMenu()">
+                <div class="button-wrap">
+                <div class="icon icon-menu"></div>
+            </div>
+            </button>
         </div>
         <form action="" method="post" class="header-search">
             <img src="./assets/img/search_icon.png" alt="">
@@ -30,6 +35,13 @@
         </div> -->
     </header>
     <main>
+        <section id="anuncios" class="main-anuncions section-item">
+            <article id="anuncios">
+                <div class="card-container anuncios-container">
+                    <div id="anuncios-item" class="card-item"></div>
+                </div>
+            </article>
+        </section>
         <section class="main-sagas section-item">
             <article id="sagas">
                 <div class="main-header">
